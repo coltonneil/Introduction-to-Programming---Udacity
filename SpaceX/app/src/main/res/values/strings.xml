@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SpaceX</string>
+    <string name="comp_name">SpaceX</string>
+    <string name="tag_line">Spaceflight Redefined</string>
+    <string name="contact_us">Contact Us:</string>
+    <string name="by_phone">By phone:</string>
+    <string name="by_email">By email:</string>
+    <string name="visit_us">Visit Us:</string>
+    <string name="visit">In person:</string>
+    <string name="website">On the web:</string>
+    <string name="phone_number">(310) 363-6000</string>
+    <string name="email_address">sales@spacex.com</string>
+    <string name="physical_address">18390 NE 68th St, Redmond, WA 98052</string>
+    <string name="web_address">spacex.com/</string>
+    <string name="description">SpaceX launches payloads into space using rockets designed to be reusable at a fraction of the cost of a typical launch.</string>
+</resources>

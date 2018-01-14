@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@string/description"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        <TextView
+            android:id="@+id/contact_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@string/contact_us"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <RelativeLayout
+            android:id="@+id/phone_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_us"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/by_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/by_phone"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/by_phone"
+                android:text="@string/phone_number"
+                android:autoLink="phone"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/email_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_container"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/by_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/by_email"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/email_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/by_email"
+                android:text="@string/email_address"
+                android:autoLink="email"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/visit_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_container"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@string/visit_us"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <RelativeLayout
+            android:id="@+id/navigate_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/visit_us"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/visit"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/physical_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/visit"
+                android:text="@string/physical_address"
+                android:autoLink="map"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/website_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigate_container"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/website"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/web_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/website"
+                android:text="@string/web_address"
+                android:autoLink="web"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
